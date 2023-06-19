@@ -1,1 +1,0 @@
-# ImageMagick_Enc
