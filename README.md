@@ -12,7 +12,7 @@ The installation file contains the program itself and does not contain a version
 
 ***The following formats are supported:***
 - jpg
-- hey
+- heic
 - webp
 - png
 - and other
