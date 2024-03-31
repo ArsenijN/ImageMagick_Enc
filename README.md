@@ -1,14 +1,13 @@
-# ImageMagick_Enc
-ArsenijN ImageMagick converter is a small visual shell with flexible options.
-This small program is written in Batch and allows you to easily convert photos while preserving all possible EXIF metadata.
+# ImageMagick_Enc English version:
+**ImageMagick Encoder is a small portable program that is written in Batch and allows you to easily convert photos while preserving all possible EXIF metadata.**
 
 ***How does it work?***
 The installation file contains the program itself and does not contain a version of ImageMagick. [Official ***site of ImageMagick***](https://imagemagick.org/index.php)
 
 ***How to use it?***
-1. You need to place the photo in the folder where the bat file is located
-2. Run ImageMagick Encoder.bat and enter quality settings (skip if silent mode is selected in config)
-3. Wait until the process is finished. The script will write if errors occur and show the number of converted/total files
+1. You need to place the photo in the folder where the .bat file is located
+2. Run "ImageMagick Encoder v. 1.5.2.bat" and enter the quality settings (skip if "silent" mode is selected in the config)
+3. Wait until the process is finished. The script will write if there are any errors and show the number of converted/total files
 
 ***The following formats are supported:***
 - jpg
@@ -21,15 +20,15 @@ The advantage of this application is the native support of HEIC without addons, 
 ![Screenshot 2023-08-15 225306 – 35% of quality on document photos – translate_waifu2x_noise0_scale4x](https://github.com/ArsenijN/ImageMagick_Enc/assets/67965122/af546f96-5505-4e9d-954f-1b201367cb89)
 
 
-AVIF has a better compression capability and even with slight lossy conversion from jpg you get a much smaller file size, when using other formats it depends on the "complexity of the image" but also Samsung doesn't support **some** images after conversion, so to replace the images from jpg or heic to avif for further use on a smartphone - not strong yet
+AVIF has a better compression capability and even with slight lossy conversion from jpg you get a much smaller file size, when using other formats it depends on the "complexity of the image", but also Samsung does not support **some** images after conversion (retest will take approx. from 01.04.2024), so to replace images from jpg or heic to avif for further use on a smartphone - not strong yet
 
 
 *This shell project is open source, you can modify it and use parts of it in your projects. I try to leave comments on how the code works, but they can be written in Ukrainian if there is a new function in the code.*
 
 You can support me and my developments through the following links:
-[DIAKA](https://arsenij-mine.diaka.ua/donate),
+[Thank you](https://arsenij-mine.diaka.ua/donate),
 [buymeacoffee](https://www.buymeacoffee.com/arsenijnocQ),
-[You really need to start donatello]
+[I really need to start a donatello]
 
 A set of factors for a "complex" image to compress: my calculations
    - Large areas of the same image (eg background, sky, walls, etc.) - compression ratio: maximum
