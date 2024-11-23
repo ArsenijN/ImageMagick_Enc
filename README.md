@@ -1,41 +1,41 @@
 # ImageMagick_Enc English version:
-**ImageMagick Encoder is a small portable program that is written in Batch and allows you to easily convert photos while preserving all possible EXIF metadata.**
+**ImageMagick Encoder is a small portable program written in Batch and allows you to easily convert photos while preserving all possible EXIF ​​metadata.**
 
-***How does it work?***
-The installation file contains the program itself and does not contain a version of ImageMagick. [Official ***site of ImageMagick***](https://imagemagick.org/index.php)
+***How ​​does it work?***
 
-***How to use it?***
+The installation file contains only the shell itself. You need to download `ImageMagick` from the [official ***site***](https://imagemagick.org/index.php)
+
+***How ​​to use it?***
+
 1. You need to place the photo in the folder where the .bat file is located
-2. Run "ImageMagick Encoder v. 1.5.2.bat" and enter the quality settings (skip if "silent" mode is selected in the config)
-3. Wait until the process is finished. The script will write if there are any errors and show the number of converted/total files
+2. Run "ImageMagick Encoder v. 1.5.2.bat" and enter the quality settings (skip if the "silent" mode is selected in the config)
+3. Wait until the process is finished. The script will write if there are errors and show the number of converted/total files
 
 ***The following formats are supported:***
 - jpg
 - heic
 - webp
 - png
-- and other
+- and others
 
-The advantage of this application is the native support of HEIC without addons, so if you are the owner of a Samsung, iPhone or other smartphone that takes photos in this format - this tool is for you!
+The advantages of this application are native support for HEIC without add-ons, so if you are the owner of a Samsung, iPhone or other smartphone that takes photos in this format - this tool is for you!
 ![Screenshot 2023-08-15 225306 – 35% of quality on document photos – translate_waifu2x_noise0_scale4x](https://github.com/ArsenijN/ImageMagick_Enc/assets/67965122/af546f96-5505-4e9d-954f-1b201367cb89)
 
+AVIF has better compression capability, and even with minor loss of conversion from jpg you get significantly smaller file size, when using other formats it depends on the "complexity of the image", but also Samsung does not support **some** images after conversion (retesting will continue from 12/31/2024), so to replace images from jpg or heic to avif for further use on a smartphone - is not yet reliable
 
-AVIF has a better compression capability and even with slight lossy conversion from jpg you get a much smaller file size, when using other formats it depends on the "complexity of the image", but also Samsung does not support **some** images after conversion (retest will take approx. from 01.04.2024), so to replace images from jpg or heic to avif for further use on a smartphone - not strong yet
+*This shell project is open, you can adjust it and use parts of it in your projects. I try to leave comments on the code, but they can be written in Ukrainian if there is a new feature in the code.*
 
-
-*This shell project is open source, you can modify it and use parts of it in your projects. I try to leave comments on how the code works, but they can be written in Ukrainian if there is a new function in the code.*
-
-You can support me and my developments through the following links:
-[Thank you](https://arsenij-mine.diaka.ua/donate),
+You can support me and my developments at the following link:
+[Dyaka](https://arsenij-mine.diaka.ua/donate),
 [buymeacoffee](https://www.buymeacoffee.com/arsenijnocQ),
 [I really need to start a donatello]
 
-A set of factors for a "complex" image to compress: my calculations
-   - Large areas of the same image (eg background, sky, walls, etc.) - compression ratio: maximum
-   - Color gradients/lighting (sea, landscape, etc.) - compression ratio: medium
-   - Small objects (grass, bushes, trees, etc.) - degree of compression: depending on the type of object ~ not bad
-   - Round objects (application interface, photos, etc.) - degree of compression: unknown (compression is carried out in the form of squares with a maximum size of 128x128)
-   - Text (interface, screenshots, etc.) - degree of compression: unknown (depending on the quality of the image and the color of the text, the minimum size of the full text image is ≈ 2:1)
+The set of factors of a "complex" image for compression: my calculations
+- Large areas of the same image (e.g. background, sky, walls, etc.) - compression ratio: maximum
+- Color/lighting gradients (sea, landscape, etc.) - compression ratio: average
+- Small objects (grass, bushes, trees, etc.) - compression ratio: depending on the type of object ~ not bad
+- Rounded objects (application interface, photos, etc.) - compression ratio: unknown (compression is performed in the form of squares that have maximum size 128x128)
+- Text (interface, screenshots, etc.) - compression level: unknown (depending on image quality and text color, minimum size of full image with text ≈ 2:1)
 
 ***
 
@@ -43,7 +43,7 @@ A set of factors for a "complex" image to compress: my calculations
 **ImageMagick Encoder - це маленька портативна програма, яка написана на Batch та дозволяє Вам легко конвертувати фотографії зі збереженням усіх можливих метаданих EXIF.**
 
 ***Як це працює?***
-Інсталяційний файл містить саму програму та не містить версію ImageMagick. [Офіційний ***сайт ImageMagick***](https://imagemagick.org/index.php)
+Інсталяційний файл містить тільки саму оболонку. Вам необхідно завантажити `ImageMagick` з [офіційного ***сайту***](https://imagemagick.org/index.php)
 
 ***Як цим користуватись?***
 1. Вам необхідно помістити фото у папку де знаходиться файл .bat файл
@@ -61,7 +61,7 @@ A set of factors for a "complex" image to compress: my calculations
 ![Знімок екрана 2023-08-15 225306 – 35% of quality on document photos – translate_waifu2x_noise0_scale4x](https://github.com/ArsenijN/ImageMagick_Enc/assets/67965122/af546f96-5505-4e9d-954f-1b201367cb89)
 
 
-AVIF має ліпшу стискальну можливість, та навіть при незначних втратах конвертування з jpg ви отримуєте значне менший розмір файлу, при використанні інших форматів залежить від "складності зображення", але також Samsung не підтримує **деякі** зображення після конвертації (повторна перевірка триватиме приблизно з 01.04.2024), тому для заміни зображень з jpg або heic на avif для подальшого використання на смартфоні - поки не є сильним
+AVIF має ліпшу стискальну можливість, та навіть при незначних втратах конвертування з jpg ви отримуєте значне менший розмір файлу, при використанні інших форматів залежить від "складності зображення", але також Samsung не підтримує **деякі** зображення після конвертації (повторна перевірка триватиме  з 31.12.2024), тому для заміни зображень з jpg або heic на avif для подальшого використання на смартфоні - поки не є надійним
 
 
 *Ця оболонка-проект є відкритою, ви можете корегувати його та використовувати його частини у своїх проектах. Я намагаюся залишати коментарі роботи коду, але вони можуть бути написані на Українській мові якщо є нова функція в коді.*
@@ -88,5 +88,5 @@ AVIF має ліпшу стискальну можливість, та наві�
 
 
 
-Мені 14 🥳
-I am 14 🥳
+Мені 15 🥳
+I am 15 🥳
