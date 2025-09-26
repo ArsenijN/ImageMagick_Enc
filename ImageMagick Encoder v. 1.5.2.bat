@@ -121,9 +121,10 @@ for %%F in (%formats%) do (
                             echo Image may contains Alpha channel. Moving in converted... ^(%substring%^)
                             2>NUL >NUL move "%%a" "originals\"
                             @REM %substring% doesn't have a value from batch file, maybe a multithreading problem?
+                            @REM Also Windows Photos app can't view transparent AVIF's
                         ) else (
                             echo Image doesn't have Alpha channel. Converting... ^(%substring%.^)
-                            ImageMagick\convert !Parameters! -quality !quality! "%%a" "converted\%%~na%outformat%"
+                            ImageMagick\%PreferUse% !Parameters! -quality !quality! "%%a" "converted\%%~na%outformat%"
                             2>NUL >NUL move "%%a" "originals\"
                         )
                     )
@@ -131,7 +132,7 @@ for %%F in (%formats%) do (
                     @REM if "%IdentifyAlpha%"=="srgba" move "%%a" "originals\"
                     @REM if "%IdentifyAlpha%"=="rgba" ImageMagick\convert !ParametersWoConvert! -quality !quality! "%%a" "converted\%%~na%outformat%"
                 ) else (
-                    ImageMagick\convert !Parameters! -quality !quality! "%%a" "converted\%%~na%outformat%"
+                    ImageMagick\%PreferUse% !Parameters! -quality !quality! "%%a" "converted\%%~na%outformat%"
                     2>NUL >NUL move "%%a" "originals\"
                 )
                 @REM echo kk
