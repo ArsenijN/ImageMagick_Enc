@@ -18,7 +18,6 @@ set Parameters=%ParametersWoConvert%
 if "%Language%"=="Ukr" echo Створення папок...
 if "%Language%"=="En" echo Making folders...
 
-::FIX: wmic was removed in Windows 11 24H2/25H2. Use PowerShell to get datetime instead.
 for /f "delims=" %%a in ('powershell -NoProfile -Command "Get-Date -Format 'yyyyMMddHHmmss'"') do set "datetime=%%a"
 
 if "%Language%"=="Ukr" echo Значення змінної datetime: %datetime%
