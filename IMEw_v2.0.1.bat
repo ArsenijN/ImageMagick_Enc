@@ -8,11 +8,11 @@ for /f %%a in ('"prompt $H&for %%b in (0) do rem"') do set "BS=%%a"
 type logo
 @REM logo maked in https://patorjk.com/software/taag/#p=display&f=3D%20Diagonal&t=AIC
 @REM IDK how to make "type" text: https://chat.openai.com/share/e369a9b8-938d-4909-95a4-111ae2993141
-@REM echo ImageMagick converter v.1.5.1
+@REM echo ImageMagick converter v.2.0.1
 
 @REM Colored text with powershell: https://stackoverflow.com/questions/2048509/how-to-echo-with-different-colors-in-the-windows-command-line
-powershell write-host -fore Green ImageMagick converter v.1.5.2
-powershell write-host -fore DarkGray -back Black 2023-2023. Open source. GitHub: https://github.com/ArsenijN/ImageMagick_Enc
+powershell write-host -fore Green ImageMagick converter v.2.0.1
+powershell write-host -fore DarkGray -back Black 2023-2026. Open source. GitHub: https://github.com/ArsenijN/ImageMagick_Enc
 echo Read config...
 for /f "usebackq tokens=1,2 delims==\" %%a in ("config.txt") do (
     if "%%a" neq "" set "%%a=%%~b"
@@ -34,7 +34,6 @@ if "%Language%"=="En" set /p quality=Enter a quality setting of 0..100 (note: lo
 if "%Language%"=="Ukr" echo Створення папок...
 if "%Language%"=="En" echo Making folders...
 
-::FIX: wmic was removed in Windows 11 24H2/25H2. Use PowerShell to get datetime instead.
 for /f "delims=" %%a in ('powershell -NoProfile -Command "Get-Date -Format 'yyyyMMddHHmmss'"') do set "datetime=%%a"
 
 if "%Language%"=="Ukr" echo Значення змінної datetime: %datetime%
